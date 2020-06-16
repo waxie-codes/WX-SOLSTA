@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1 class="title">All Products<h1>  
+          <table class="table is-bordered">
+           <thead>
+             <tr>
+                 <th>Category</th>
+                 <th>Item Number</th>
+                 <th>Product Description</th>
+                 <th>SDS</th>
+                 <th>Spec Sheet</th>
+                 <th>Ingredients</th>
+             </tr>
+           </thead>
+           <tbody>
+   {% for product in pages %}
+   <tr>
+     <th>{{product.category}} - {{SOLSTA_CATEGORIES[product.category.title()]}}</th>
+   <th>{{product.waxie_item_number}}</th>
+   <th>
+         <h1 class=""><a
+             href="/{{product.slug}}">{{product.product_description}}</a></h1>
+   </th>
+     <td>
+       <a href="{{product.safety_data_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
+     </td>
+     <td>
+       <a href="{{product.spec_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
+     </td>
+     <td>
+       {#
+       <a href="{{product.safety_data_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
+       #}
+     </td>
+   </tr>
+    {% endfor %}
+         </tbody>
+       </table>
+        </ul>
+  </div>
+</section>
+{% endblock %}

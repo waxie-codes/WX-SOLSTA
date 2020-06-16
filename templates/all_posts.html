@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1 class="title">All Posts<h1>  
+        <ul>
+          {% for page in pages %}
+          <li><a class="subtitle" href="/{{page.slug}}">{{page.waxie_item_number}}</a></li>
+          {% endfor %}
+        </ul>
+  </div>
+</section>
+{% endblock %}
