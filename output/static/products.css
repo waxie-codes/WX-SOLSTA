@@ -1,0 +1,9 @@
+p, h2 {padding: .5em;}
+
+h2:nth-of-type(even) {background-color: #ddd;}
+
+.greyed {
+  background-color: #ddd;
+  margin: 0;
+  padding: .5em;
+}
