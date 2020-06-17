@@ -21,9 +21,13 @@
         <div class="column">
           <div class="box">
             <figure class="figure">
-              <img style="width: 350px;" src="{{dispenser.image}}">
+              <a href="/{{dispenser.slug}}">
+                <img style="width: 350px;" src="{{dispenser.image}}">
+              </a>
             </figure>
-            <h3 class="subtitle">{{dispenser.product_description}}</h3>
+            <a href="/{{dispenser.slug}}">
+              <h3 class="subtitle">{{dispenser.product_description}}</h3>
+            </a>
           </div>
         </div>
       {% endfor %}
