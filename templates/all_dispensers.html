@@ -2,12 +2,16 @@
 {% block content %}
 <section class="section">
   <div class="container">
-    <h1 class="title">All Posts<h1>  
-        <ul>
-          {% for page in pages %}
-          <li><a class="subtitle" href="/{{page.slug}}">{{page.waxie_item_number}}</a></li>
-          {% endfor %}
-        </ul>
+    <h1 class="title">All SOLSTA DISPENSERS<h1>
+
+    <div class="content">
+      <ul>
+      {% for product in pages %}
+        </li> <strong>{{product.waxie_item_number}}</strong> -
+        <href="/{{product.slug}}">{{product.product_description}}</a></h1></li>
+      {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 {% endblock %}
