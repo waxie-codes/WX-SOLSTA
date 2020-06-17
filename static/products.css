@@ -1,5 +1,7 @@
 h2:nth-of-type(even) {background-color: #ddd;}
 
+p {margin: 0;}
+
 .content .greyed {
   background-color: #ddd;
   margin: 0;
