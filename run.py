@@ -42,7 +42,7 @@ class Index(Page):
 
     def __init__(self):
         super().__init__()
-        dispensers = site.collections['dispensers']
+        self.dispensers = site.collections['dispensers'].pages
 
 site.route(Index())
 site.render()
