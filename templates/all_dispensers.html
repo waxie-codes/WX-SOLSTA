@@ -5,13 +5,12 @@
     <h1 class="title">All SOLSTA DISPENSERS<h1>
 
       {% for product in pages %}
-        <h2 class="subtitle"> <a
-            href="/{{product.slug}}"><strong>{{product.waxie_item_number}}</strong>
-        {{product.product_description}}</a></h2>
-
-        <div class="content">
+        <h2 class="subtitle">
+          <a href="/{{product.slug}}">
+            <strong>{{product.waxie_item_number}}</strong>{{product.product_description}}
+          </a>
+        </h2>
       {% endfor %}
-      </ul>
     </div>
   </div>
 </section>
