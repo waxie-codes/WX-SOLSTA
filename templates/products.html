@@ -29,3 +29,16 @@
     </div>
   </section>
   {% endblock %}
+  {% block scripts %}
+  <script rel='text/javascript'>
+    const h2s = document.querySelectorAll('h2:nth-of-type(even)');
+    for (let h2 of h2s) {
+      h2.classList.add('greyed');
+      var elem = h2.nextElementSibling;  
+      while (elem.nodeName == "P") {
+        elem.classList.add('greyed');
+        elem = elem.nextElementSibling;
+      };
+    }
+  </script>
+  {% endblock %}
