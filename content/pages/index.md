@@ -1,8 +1,10 @@
 ## BENEFITS OF WAXIE SOLUTION STATION
-• Flexible to meet your needs
-• Prevents chemical exposure, keeps workers safe
-• Simplistic product selection and identification • Tamper-resistant
-   
+
+* Flexible to meet your needs
+* Prevents chemical exposure, keeps workers safe
+* Simplistic product selection and identification 
+* Tamper-resistant
+
 ## SAFETY
 
 The closed-loop system and spill-resistant bottles help ensure
