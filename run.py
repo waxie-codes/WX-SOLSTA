@@ -14,11 +14,6 @@ site.SOLSTA_CATEGORIES = {
         '900': 'FoodService Cleaners/Sanitizer',
         }
 
-@site.register_route
-class Index(Page):
-    template = "index.html" # page.html is the default template but you can make a custom template
-    slug = "index"
-    content_path = 'content/pages/index.md'
 
 
 @site.register_collection
@@ -40,4 +35,14 @@ class dispensers(Collection):
     archive_slug = 'all_dispensers.html'
     template = 'dispensers.html'
 
+class Index(Page):
+    template = "index.html" # page.html is the default template but you can make a custom template
+    slug = "index"
+    content_path = 'content/pages/index.md'
+
+    def __init__(self):
+        super().__init__()
+        dispensers = site.collections['dispensers']
+
+site.route(Index())
 site.render()
