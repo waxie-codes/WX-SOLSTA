@@ -16,19 +16,23 @@
     </div>
 
     <h2 class="subtitle"><a href="/all_dispensers">View Dispensers</a></h2>
+      <div class="level">
+        <div class="level-item">
       {% for dispenser in dispensers %}
-      <div class="card">
-        <div class="card-image">
-          <img src="{{dispenser.image}}">
-        </div>
-        <div class="card-body">
-          <div class="has-text-centered">
-            <h3 class="subtitle">{{dispenser.product_description}}</h3>
+          <div class="card">
+            <div class="card-image">
+              <img src="{{dispenser.image}}">
+            </div>
+            <div class="card-body">
+              <div class="has-text-centered">
+                <h3 class="subtitle">{{dispenser.product_description}}</h3>
+              </div>
+            </div>
           </div>
+      {% endfor %}
         </div>
       </div>
 
-      {% endfor %}
       <h2 class="subtitle"><a href="/all_products">View Products</a></h2>
   </div>
 </section>
