@@ -17,7 +17,15 @@
 
     <h2 class="subtitle"><a href="/all_dispensers">View Dispensers</a></h2>
       {% for dispenser in dispensers %}
-        {{dispenser}}
+      <div class="card">
+        <div class="card-image">
+          <img src="{{dispenser.image}}">
+        </div>
+        <div class="card-body">
+          {{dispenser.product_description}}
+        </div>
+      </div>
+
       {% endfor %}
       <h2 class="subtitle"><a href="/all_products">View Products</a></h2>
   </div>
