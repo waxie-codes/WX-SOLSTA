@@ -18,6 +18,7 @@ site.SOLSTA_CATEGORIES = {
 class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
     slug = "index"
+    content_path = 'content/pages/index.md'
 
 
 @site.register_collection
