@@ -36,8 +36,8 @@ class dispensers(Collection):
     routes = ["", "dispensers"] # routes will appear at '/page' and '/pages/page'
     content_path = "content/dispensers" # collections must have their paths assigned
     has_archive = True
-    archive_template = "all_posts.html"
+    archive_template = "all_dispensers.html"
     archive_slug = 'all_dispensers.html'
     template = 'dispensers.html'
 
-site.render() # build out the tools
+site.render()
