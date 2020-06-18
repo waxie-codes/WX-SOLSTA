@@ -2,7 +2,7 @@
 .hide-at-top {
   transition: top 0.3s;
   position: fixed;
-  top: -70px;
+  top: -100px;
   width: 100%; /* Full width */
   z-index: 1
 }
@@ -12,7 +12,12 @@
 }
 
 
-@media only screen and (max-width: 900px){
-  body {font-size: 1.125rem;}
-  .navbar-item img {min-height: 100px;}
+@media only screen and (max-width: 1300px){
+  body {
+    font-size: 1.125rem;
+  }
+
+  .navbar-item img {
+    min-height: 100px;
+  }
 }
