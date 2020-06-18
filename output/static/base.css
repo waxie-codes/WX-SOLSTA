@@ -11,7 +11,7 @@
 }
 
 
-@media only screen and (max-width: 800px;){
+@media only screen and (max-width: 1000px;){
   body {font-size: 1.125rem;}
   .navbar-item img {min-height: 100px;}
 }
