@@ -1,4 +1,5 @@
 product_description: WAXIE SOLSTA PDC | PORTABLE DILUTION CONTROL
+slug: pdc
 waxie_item_number: 321016
 image: https://shop.waxie.com/Attachments/attachments/images/medium/321016.jpg
 
