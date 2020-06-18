@@ -25,6 +25,9 @@ class products(Collection):
     archive_template = "all_products.html"
     template = 'products.html'
 
+    @staticmethod
+    def archive_default_sort(cls):
+        return (cls.category , cls.waxie_item_number)
 
 @site.register_collection
 class dispensers(Collection):
