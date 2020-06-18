@@ -3,7 +3,7 @@ body {font-size: 1.2em}
 .hide-at-top {
   transition: top 0.3s;
   position: fixed;
-  top: -50px;
+  top: -70px;
   width: 100%; /* Full width */
   z-index: 1
 }
