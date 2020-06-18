@@ -674,6 +674,24 @@
 
   <!-- Load FontAwesome Icon Pack -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script rel="type/javascript">
+window.onscroll = function () {
+  
+  console.log(window.pageYOffset);
+  
+  if (window.pageYOffset > 200) {
+  
+    const headerMenu = document.querySelector('header.hide-at-top');
+    headerMenu.classList.add('show-me');
+    } 
+  
+  else {
+    const headerMenu = document.querySelector('header.hide-at-top');
+    headerMenu.classList.remove('show-me');
+    
+  }
+  };    
+  </script>
   
   
 </body>
