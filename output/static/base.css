@@ -1,8 +1,4 @@
 
-.header {
-  position: fixed;
-}
-
 .hide-at-top {
   transition: top 0.3s;
   top: -70px;
