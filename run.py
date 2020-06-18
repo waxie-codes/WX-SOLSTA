@@ -42,6 +42,7 @@ class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
     slug = "index"
     content_path = 'content/pages/index.md'
+    has_header = False
 
     def __init__(self):
         super().__init__()
