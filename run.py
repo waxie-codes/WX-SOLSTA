@@ -42,11 +42,11 @@ class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
     slug = "index"
     content_path = 'content/pages/index.md'
-    hide_header = True
 
     def __init__(self):
         super().__init__()
         self.dispensers = site.collections['dispensers'].pages
+        self.hide_header = True
 
 site.route(Index())
 site.render()
