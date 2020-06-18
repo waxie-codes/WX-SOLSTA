@@ -13,3 +13,5 @@ body {font-size: 1.125rem;}
 .show-me {
   top: 0px;
 }
+
+.navbar-item img {min-height: 100px;}
