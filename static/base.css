@@ -1,8 +1,10 @@
-body {font-size: 1.125rem;}
 
 .content{font-size: 1.125rem;}
 
-.header {position: fixed;}
+.header {
+  position: fixed;
+  top: 0;
+}
 
 .hide-at-top {
   transition: top 0.3s;
@@ -15,4 +17,8 @@ body {font-size: 1.125rem;}
   top: 0px;
 }
 
-.navbar-item img {min-height: 100px;}
+
+@media only screen and (max-width: 800px;){
+  body {font-size: 1.125rem;}
+  .navbar-item img {min-height: 100px;}
+}
