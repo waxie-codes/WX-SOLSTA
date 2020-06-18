@@ -23,7 +23,6 @@ class products(Collection):
     has_archive = True
     archive_slug = 'all_products.html'
     archive_template = "all_products.html"
-    archive_reverse: bool = True
     template = 'products.html'
 
     @staticmethod
