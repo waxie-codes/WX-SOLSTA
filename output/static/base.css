@@ -1,0 +1,12 @@
+.hide-at-top {
+  transition: top 0.3s;
+  position: fixed;
+  top: -50px;
+  width: 100%; /* Full width */
+  background-color: red !important;
+  z-index: 1
+}
+
+.show-me {
+  top: 0px;
+}

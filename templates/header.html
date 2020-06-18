@@ -1,5 +1,8 @@
-{% if has_header %}
-  <header>
+{% if hide_header %}
+<header class="hide-at-top has-background-white">
+{% else %}
+<header>
+{% endif %}
     <div class="navbar">
       <div class="navbar-brand">
         <a class="navbar-item" href="/"><h1 class="title">WAXIE
@@ -13,4 +16,3 @@
       </div>
     </div>
   </header>
-  {% endif %}

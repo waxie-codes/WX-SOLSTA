@@ -36,3 +36,23 @@
   </div>
 </section>
 {% endblock%}
+{% block script %}
+  <script rel="type/javascript">
+window.onscroll = function () {
+  
+  console.log(window.pageYOffset);
+  
+  if (window.pageYOffset > 200) {
+  
+    const headerMenu = document.querySelector('header.hide-at-top');
+    headerMenu.classList.add('show-me');
+    } 
+  
+  else {
+    const headerMenu = document.querySelector('header.hide-at-top');
+    headerMenu.classList.remove('show-me');
+    
+  }
+  };    
+  </script>
+{% endblock%}
