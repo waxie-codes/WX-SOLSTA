@@ -1,5 +1,3 @@
-body {font-size: 1.5em}
-
 .hide-at-top {
   transition: top 0.3s;
   position: fixed;
