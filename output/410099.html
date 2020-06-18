@@ -5,6 +5,7 @@
   <title> WAXIE Solution Station</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   
+  <link rel="stylesheet" href="/static/products.css">
   
 </head>
 <body>
@@ -23,136 +24,32 @@
     </div>
   </header>
   
-<section class="section">
-  <div class="container">
-    <h1 class="title">All Products<h1>  
-          <table class="table is-bordered">
-           <thead>
-             <tr>
-                 <th>Category</th>
-                 <th>Item Number</th>
-                 <th>Product Description</th>
-                 <th>SDS</th>
-                 <th>Spec Sheet</th>
-                 <th>Ingredients</th>
-             </tr>
-           </thead>
-           <tbody>
-   
-   <tr>
-     <th>100 - Cleaners/Degreasers</th>
-   <th>410098</th>
-   <th>
-         <h1 class=""><a
-             href="/410098">110 HD DEGREASER</a></h1>
-   </th>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       
-     </td>
-   </tr>
-    
-   <tr>
-     <th>100 - Cleaners/Degreasers</th>
-   <th>410099</th>
-   <th>
-         <h1 class=""><a
-             href="/410099">120 WAXIE-Green XHD DEGREASER</a></h1>
-   </th>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       
-     </td>
-   </tr>
-    
-   <tr>
-     <th>100 - Cleaners/Degreasers</th>
-   <th>410130</th>
-   <th>
-         <h1 class=""><a
-             href="/410130">130 XHD Degreaser</a></h1>
-   </th>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       
-     </td>
-   </tr>
-    
-   <tr>
-     <th>300 - Restroom Cleaners</th>
-   <th>160115</th>
-   <th>
-         <h1 class=""><a
-             href="/160115">WAXIE-GREEN SOLSTA 330 FRESH MIST LIQUID MICROBES</a></h1>
-   </th>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       
-     </td>
-   </tr>
-    
-   <tr>
-     <th>300 - Restroom Cleaners</th>
-   <th>170200</th>
-   <th>
-         <h1 class=""><a
-             href="/170200">WAXIE SOLSTA 320 DISINFECTANT CLEANER</a></h1>
-   </th>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       
-     </td>
-   </tr>
-    
-   <tr>
-     <th>800 - Carpet Cleaners</th>
-   <th>1070664</th>
-   <th>
-         <h1 class=""><a
-             href="/1070064">843 WAXIE-Green™️  Encapsulating Carpet Extractor</a></h1>
-   </th>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       <a href=""><span class="icon"><i class="far fa-file"></i></span></a>
-     </td>
-     <td>
-       
-     </td>
-   </tr>
-    
-         </tbody>
-       </table>
-        </ul>
-  </div>
-</section>
+  <section class="section">
+    <div class="container">
+      <div class="has-text-centered">
+        <img style="max-height: 25em;" src="https://shop.waxie.com/Attachments/attachments/images/medium/410099.jpg">
+        </div>
+      <div class="content">
+        <a href="#">
+          <h2 class="subtitle is-5">
+            100-Cleaners/Degreasers
+          </h2>
+        </a>
+        <h1 class="title is-2">120 WAXIE-Green XHD DEGREASER</h1>
 
+        <p>No rinse, no residue. Clean, crisp fragrance. Removes grease, ink, crayon, pencil, lipstick, black heel marks, smoke film and greasy food soils. It can be used on most any washable surface. Not for use on water-based paint, aluminum or glass.</p>
+
+          <h2>Safety Information</h2>
+            <p>Read the Safety Data Sheet (SDS) and product label before use. The
+            SDS and product label contain hazard warnings, precautionary statements
+            and first aid procedures.</p>
+            <p>HOTLINE NUMBER: You may contact Chem-Tel at (800) 255-3924 for
+            emergency medical treatment information.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="section">
   <div class="container">
     <div class="footer">
@@ -223,6 +120,17 @@
   <!-- Load FontAwesome Icon Pack -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   
+  <script rel='text/javascript'>
+    const h2s = document.querySelectorAll('h2:nth-of-type(even)');
+    for (let h2 of h2s) {
+      h2.classList.add('greyed');
+      var elem = h2.nextElementSibling;  
+      while (elem.nodeName == "P") {
+        elem.classList.add('greyed');
+        elem = elem.nextElementSibling;
+      };
+    }
+  </script>
   
 </body>
 </html>
