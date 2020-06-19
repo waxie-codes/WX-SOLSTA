@@ -49,5 +49,4 @@ class Index(Page):
         self.hide_header = True
 
 site.route(Index())
-print(site.subcollections)
 site.render()
