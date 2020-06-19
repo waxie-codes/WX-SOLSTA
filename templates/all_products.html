@@ -41,20 +41,22 @@
            <a href="/{{product.slug}}">{{product.product_description}}</a>
          </div>
 
-         <div class="control">
           {% if product.waxie_green %}
+           <div class="control">
              <div class="tags  are-small has-addons">
                <span class="tag is-success"></span>
                <span class="tag is-dark">WAXIE Green</span>
              </div>
+           </div>
            {% endif %}
 
            {% if product.versa_compatible %}
-           <div class="tags are-small has-addons">
-             <span class="tag is-warning"></span>
-             <span class="tag is-dark">Versa Compatible</span>
+           <div class="control">
+             <div class="tags are-small has-addons">
+               <span class="tag is-warning"></span>
+               <span class="tag is-dark">Versa Compatible</span>
+             </div>
            </div>
-         </div>
            {% endif %}
          </div>
        </div>
