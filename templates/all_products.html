@@ -18,17 +18,19 @@
           <table class="has-text-left table is-bordered is-fullwidth is-striped">
            <thead>
              <tr>
-                 <th>Item Number</th>
-                 <th>Product Description</th>
-                 <th>SDS</th>
-                 <th>Spec Sheet</th>
-                 <th>Ingredients</th>
+               <th>Versa Compatible</th>
+               <th>Item Number</th>
+               <th>Product Description</th>
+               <th>SDS</th>
+               <th>Spec Sheet</th>
+               <th>Ingredients</th>
              </tr>
            </thead>
            <tbody class="has-text-left">
    {% for product in pages %}
      {% if product.category == category %}
    <tr>
+   <th>{{product.versa_compatible}}</th>
    <th>{{product.waxie_item_number}}</th>
    <th>
          <h1 class=""><a
