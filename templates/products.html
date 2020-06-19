@@ -15,11 +15,12 @@
         </a>
         <h1 class="title is-2">{{product_description}}</h1>
         <div class="field is-grouped">
-          <div class="control">
           {% for certification in certifications %}
-            <span class="tag is-rounded">
+          <div class="control">
+            <div class="tag is-rounded">
               {{certification}}
-            </span>
+            </div>
+          </div>
           {% endfor %}
           </div>
 
