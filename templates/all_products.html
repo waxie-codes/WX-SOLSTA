@@ -34,25 +34,23 @@
    {% for product in pages %}
      {% if product.category == category %}
    <tr>
-     <th>
-     </th>
    <th>
+         {{product.waxie_item_number}}
+         </th>
+   <th>
+         <h1 class=""><a
+             href="/{{product.slug}}">
+            {% if waxie_green == 'True' %}
+            {% endif %}
+             {{product.product_description}}</a></h1>
      <div class="field is-grouped">
        <div class="control">
-         {{product.waxie_item_number}}
          {% if product.versa_compatible %}
          <div class="tags  are-small has-addons">
            <span class="tag is-warning"></span>
            <span class="tag is-dark">Versa Compatible</span>
        </div>
          {% endif %}
-         </th>
-   <th>
-         <h1 class=""><a
-             href="/{{product.slug}}">
-            {% if waxie_green == 'True' %}
-          {% endif %}
-             {{product.product_description}}</a></h1>
    </th>
      <td>
        {% if product.safety_data_sheet %}
