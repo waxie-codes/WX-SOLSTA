@@ -11,7 +11,9 @@
 
         <section class="hero is-small is-grey">
           <div class="hero-body">
-            <h2 class="subtitle">{{category}} - {{catval}}</h2>
+            <h2 class="subtitle">{{category}} - {{catval}} (<strong><span
+                  class="has-text-warning">V</span></stong> - Versa
+                Compatible)</h2>
           </div>
         </section>
 
@@ -19,7 +21,6 @@
             is-narrow">
            <thead>
              <tr>
-               <th> (<strong><span class="has-text-warning">V</span></stong>) - Versa Compatible</th>
                <th>Item Number</th>
                <th>Product Description</th>
                <th>SDS</th>
@@ -43,7 +44,6 @@
          <h1 class=""><a
              href="/{{product.slug}}">
             {% if waxie_green == 'True' %}
-          GREEN!
           {% endif %}
              {{product.product_description}}</a></h1>
    </th>
