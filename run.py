@@ -1,6 +1,5 @@
 from render_engine import Site, Page, Collection, Blog
 
-
 site = Site(strict=True)
 site.SOLSTA_CATEGORIES = {
         '100': 'Cleaners/Degreasers',
@@ -27,7 +26,7 @@ class products(Collection):
 
     @staticmethod
     def archive_default_sort(cls):
-        return (cls.category , cls.waxie_item_number)
+        return (cls.product_description)
 
 @site.register_collection
 class dispensers(Collection):
