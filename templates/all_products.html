@@ -35,10 +35,14 @@
              href="/{{product.slug}}">{{product.product_description}}</a></h1>
    </th>
      <td>
+       {% if product.safety_data_sheet %}
        <a href="{{product.safety_data_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
+       {% endif %}
      </td>
      <td>
+       {% if product.spec_sheet %}
        <a href="{{product.spec_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
+       {% endif %}
      </td>
      <td>
        {#
