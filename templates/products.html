@@ -15,11 +15,13 @@
         </a>
         <h1 class="title is-2">{{product_description}}</h1>
         <div class="field is-grouped">
-          {% for certification in certifications %}
           <div class="control">
-            {{certification}}
-          </div>
+          {% for certification in certifications %}
+            <span class="tag is-rounded">
+              {{certification}}
+            </span>
           {% endfor %}
+          </div>
 
           {% if waxie_green %}
           <div class="control">
