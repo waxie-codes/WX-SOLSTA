@@ -15,11 +15,11 @@ site.SOLSTA_CATEGORIES = {
 
 class Product(Page):
     list_attrs = ['certifications']
-    template = 'products.html'
 
 @site.register_collection
 class products(Collection):
     content_type = Product
+    template = 'products.html'
     routes = ["", "products"]
     subcollections = ['category']
     content_path = "content"
