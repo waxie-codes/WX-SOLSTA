@@ -18,7 +18,7 @@ class Product(Page):
 
 @site.register_collection
 class products(Collection):
-    content_type = Product
+    page_content_type = Product
     template = 'products.html'
     routes = ["", "products"]
     subcollections = ['category']
