@@ -33,13 +33,14 @@
      {% if product.category == category %}
    <tr>
      <th>
+     </th>
+   <th>{{product.waxie_item_number}}
        {% if product.versa_compatible %}
        <strong class="has-text-warning">
        V
        </strong>
          {% endif %}
-     </th>
-   <th>{{product.waxie_item_number}}</th>
+         </th>
    <th>
          <h1 class=""><a
              href="/{{product.slug}}">
