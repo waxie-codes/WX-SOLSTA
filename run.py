@@ -13,16 +13,19 @@ site.SOLSTA_CATEGORIES = {
         '900': 'FoodService Cleaners/Sanitizer',
         }
 
+class Product(Page):
+    list_attrs = ['certifications']
+    template = 'products.html'
 
 @site.register_collection
 class products(Collection):
+    content_type = Product
     routes = ["", "products"]
     subcollections = ['category']
     content_path = "content"
     has_archive = True
     archive_slug = 'all_products.html'
     archive_template = "all_products.html"
-    template = 'products.html'
 
     @staticmethod
     def archive_default_sort(cls):
