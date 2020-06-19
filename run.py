@@ -15,10 +15,10 @@ site.SOLSTA_CATEGORIES = {
         }
 
 
-
 @site.register_collection
 class products(Collection):
     routes = ["", "products"]
+    subcollections = ['category']
     content_path = "content"
     has_archive = True
     archive_slug = 'all_products.html'
@@ -49,4 +49,5 @@ class Index(Page):
         self.hide_header = True
 
 site.route(Index())
+print(site.subcollections)
 site.render()

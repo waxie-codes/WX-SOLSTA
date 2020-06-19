@@ -3,6 +3,8 @@
 <section class="section">
   <div class="container">
     <h1 class="title">All Products<h1>  
+        {% for category, catval in SOLSTA_CATEGORIES.items() %}
+        <h2 class="subtitle">{{category}} - {{catval}}</h2>
           <table class="table is-bordered">
            <thead>
              <tr>
@@ -16,6 +18,7 @@
            </thead>
            <tbody>
    {% for product in pages %}
+     {% if product.category == category %}
    <tr>
      <th>{{product.category}} - {{SOLSTA_CATEGORIES[product.category.title()]}}</th>
    <th>{{product.waxie_item_number}}</th>
@@ -35,10 +38,11 @@
        #}
      </td>
    </tr>
+    {% endif %}
     {% endfor %}
          </tbody>
        </table>
-        </ul>
+    {% endfor %}
   </div>
 </section>
 {% endblock %}
