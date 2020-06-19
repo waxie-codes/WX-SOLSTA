@@ -19,7 +19,7 @@
             is-narrow">
            <thead>
              <tr>
-               <th> (<span class="has-text-warning"><strong>V</stong></span>) - Versa Compatible</th>
+               <th> (<strong class="has-text-warning">V</stong>) - Versa Compatible</th>
                <th>Item Number</th>
                <th>Product Description</th>
                <th>SDS</th>
@@ -31,9 +31,9 @@
    {% for product in pages %}
      {% if product.category == category %}
    <tr>
-     <th class="has-text-warning">
+     <th>
        {% if product.versa_compatible %}
-       <strong>
+       <strong class="has-text-warning">
        V
        </strong>
          {% endif %}
