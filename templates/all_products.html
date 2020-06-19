@@ -30,7 +30,11 @@
    {% for product in pages %}
      {% if product.category == category %}
    <tr>
-   <th>{{product.versa_compatible}}</th>
+     <th class="has-text-warning">
+       {% if product.versa_compatible %}
+         {{product.versa_compatible}}
+         {% endif %}
+     </th>
    <th>{{product.waxie_item_number}}</th>
    <th>
          <h1 class=""><a
