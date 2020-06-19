@@ -36,12 +36,15 @@
    <tr>
      <th>
      </th>
-   <th>{{product.waxie_item_number}}
-       {% if product.versa_compatible %}
-       <span class="tags has-addons">
-         <span class="tag is-small is-warning"></span>
-         <span class="tag is-small is-dark">Versa Compatible</span>
-       </span>
+   <th>
+     <div class="field is-grouped">
+       <div class="control">
+         {{product.waxie_item_number}}
+         {% if product.versa_compatible %}
+         <div class="tags  are-small has-addons">
+           <span class="tag is-warning"></span>
+           <span class="tag is-dark">Versa Compatible</span>
+       </div>
          {% endif %}
          </th>
    <th>
