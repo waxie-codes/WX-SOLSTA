@@ -7,10 +7,7 @@
           <p>WAXIE Solution Station products have simple descriptive names and are color and number-coded at every step of the dispensing process helping to ensure that your employees never dispense the wrong chemical into the wrong bottle.
           </p>
         </div>
-        <h2>
-             (<strong><span
-                  class="has-text-warning">V</span></stong> - Versa
-                Compatible)</h2>
+
         {% for category, catval in SOLSTA_CATEGORIES.items() %}
 
         <section class="hero is-small is-grey">
@@ -32,26 +29,34 @@
            </thead>
            <tbody class="has-text-left">
    {% for product in pages %}
-     {% if product.category == category %}
+   {% if product.category == category %}
    <tr>
      <th>
-       {{product.waxie_item_number}}
+     {{product.waxie_item_number}}
      </th>
-     <th>
-         <h1 class=""><a
-             href="/{{product.slug}}">
-            {% if waxie_green == 'True' %}
-            {% endif %}
-             {{product.product_description}}</a></h1>
+
+     <td>
      <div class="field is-grouped">
        <div class="control">
-         {% if product.versa_compatible %}
+         <a href="/{{product.slug}}">{{product.product_description}}</a>
+
+        {% if waxie_green == 'True' %}
          <div class="tags  are-small has-addons">
+           <span class="tag is-success"></span>
+           <span class="tag is-dark">WAXIE Green</span>
+         </div>
+         {% endif %}
+
+         {% if product.versa_compatible %}
+         <div class="tags are-small has-addons">
            <span class="tag is-warning"></span>
            <span class="tag is-dark">Versa Compatible</span>
-       </div>
+         </div>
          {% endif %}
-   </th>
+
+       </div>
+     </div>
+     </td>
      <td>
        {% if product.safety_data_sheet %}
        <a href="{{product.safety_data_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
