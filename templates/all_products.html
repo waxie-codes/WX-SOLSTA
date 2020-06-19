@@ -18,7 +18,6 @@
           <table class="has-text-left table is-bordered is-fullwidth is-striped">
            <thead>
              <tr>
-                 <th>Category</th>
                  <th>Item Number</th>
                  <th>Product Description</th>
                  <th>SDS</th>
@@ -30,7 +29,6 @@
    {% for product in pages %}
      {% if product.category == category %}
    <tr>
-     <th>{{product.category}} - {{SOLSTA_CATEGORIES[product.category.title()]}}</th>
    <th>{{product.waxie_item_number}}</th>
    <th>
          <h1 class=""><a
