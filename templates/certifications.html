@@ -1,8 +1,8 @@
+  <h2 class="subtitle">Certifications</h2>
+  <div class="columns">
   {% for certification in certifications %}
-  <h2 class="subtitle">Ecolab</h2>
-  {% if 'ecologo' in certification.lower() %}
-  ECOLOGO
-  {% else %}
-    {{cerfitication}}
-  {% endif %}
+  <div class="column">
+    <h3 class="subtitle is-5">{{cerfitication}}</h3>
+  </div>
   {% endfor %}
+  </div>
