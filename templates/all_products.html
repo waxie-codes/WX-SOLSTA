@@ -22,9 +22,6 @@
              <tr>
                <th>Item Number</th>
                <th>Product Description</th>
-               <th>SDS</th>
-               <th>Spec Sheet</th>
-               <th>Ingredients</th>
              </tr>
            </thead>
            <tbody class="has-text-left">
@@ -52,21 +49,6 @@
              </div>
          </div>
        </div>
-     </td>
-     <td>
-       {% if product.safety_data_sheet %}
-       <a href="{{product.safety_data_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
-       {% endif %}
-     </td>
-     <td>
-       {% if product.spec_sheet %}
-       <a href="{{product.spec_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
-       {% endif %}
-     </td>
-     <td>
-       {#
-       <a href="{{product.safety_data_sheet}}"><span class="icon"><i class="far fa-file"></i></span></a>
-       #}
      </td>
    </tr>
     {% endif %}
