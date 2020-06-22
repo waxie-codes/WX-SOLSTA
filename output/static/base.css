@@ -1,3 +1,13 @@
+.navbar-brand {
+  padding-top: .5em;
+}
+.is-visible {
+  display: block !important;
+}
+
+.is-hidden {
+  display: hidden !important;
+}
 
 .hide-at-top {
   transition: top 0.3s;
