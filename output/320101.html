@@ -77,10 +77,8 @@
         </div>
 
       <div class="content">
-
         <h2>Description</h2>
 <p>A recent innovation in cleaning and deodorizing that utilizes Hydrogen Peroxide as its active ingredient. HP All-Purpose Cleaner will go right to the source where malodors generate. It is excellent for all hard surfaces including grout and carpets and is biodegradable.</p>
-
         <h2>Safety Information</h2>
   <p>Read the Safety Data Sheet (SDS) and product label before use. The
   SDS and product label contain hazard warnings, precautionary statements
@@ -210,16 +208,20 @@ window.onscroll = function () {
 </script>
   
   <script rel='text/javascript'>
-    const h2s = document.querySelectorAll('h2:nth-of-type(even)');
-    for (let h2 of h2s) {
-      h2.classList.add('greyed');
-      var elem = h2.nextElementSibling;  
-      while (elem.nodeName == "P") {
-        elem.classList.add('greyed');
-        elem = elem.nextElementSibling;
-      };
-    }
-  </script>
+  const h2s = document.querySelectorAll('h2:nth-of-type(even)');
+
+  for (let h2 of h2s) {
+
+    h2.classList.add('greyed');
+    var elem = h2.nextElementSibling;
+
+    while (elem.nodeName == "P") {
+      elem.classList.add('greyed');
+      elem = elem.nextElementSibling;
+    };
+
+  }
+</script>
   
 </body>
 </html>

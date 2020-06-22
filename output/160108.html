@@ -51,10 +51,8 @@
         </div>
 
       <div class="content">
-
         <h2>Description</h2>
 <p>Concentrated, biodegradable, non hazardous, environmentally friendly liquid which eliminates malodors at their source. Use on carpets, pet stains, trash bins, garbage containers, urinals and any floor surfaces not harmed by water or simply sprayed around any room.</p>
-
         <h2>Safety Information</h2>
   <p>Read the Safety Data Sheet (SDS) and product label before use. The
   SDS and product label contain hazard warnings, precautionary statements
@@ -176,16 +174,20 @@ window.onscroll = function () {
 </script>
   
   <script rel='text/javascript'>
-    const h2s = document.querySelectorAll('h2:nth-of-type(even)');
-    for (let h2 of h2s) {
-      h2.classList.add('greyed');
-      var elem = h2.nextElementSibling;  
-      while (elem.nodeName == "P") {
-        elem.classList.add('greyed');
-        elem = elem.nextElementSibling;
-      };
-    }
-  </script>
+  const h2s = document.querySelectorAll('h2:nth-of-type(even)');
+
+  for (let h2 of h2s) {
+
+    h2.classList.add('greyed');
+    var elem = h2.nextElementSibling;
+
+    while (elem.nodeName == "P") {
+      elem.classList.add('greyed');
+      elem = elem.nextElementSibling;
+    };
+
+  }
+</script>
   
 </body>
 </html>

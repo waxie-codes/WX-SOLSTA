@@ -65,10 +65,8 @@
         </div>
 
       <div class="content">
-
         <h2>Description</h2>
 <p>An all-natural and powerful cleaner and deodorizer designed for every day use or for use on the toughest jobs. Contains fermentation enzymes and seven microbial species chosen for their high production enzymes useful in hard surface cleaning. Recommended for use in: hard surface cleaning, grout cleaning, urine saturated concrete odor removal, edible grease embedded surfaces and more! Fragrance free.</p>
-
         <h2>Safety Information</h2>
   <p>Read the Safety Data Sheet (SDS) and product label before use. The
   SDS and product label contain hazard warnings, precautionary statements
@@ -190,16 +188,20 @@ window.onscroll = function () {
 </script>
   
   <script rel='text/javascript'>
-    const h2s = document.querySelectorAll('h2:nth-of-type(even)');
-    for (let h2 of h2s) {
-      h2.classList.add('greyed');
-      var elem = h2.nextElementSibling;  
-      while (elem.nodeName == "P") {
-        elem.classList.add('greyed');
-        elem = elem.nextElementSibling;
-      };
-    }
-  </script>
+  const h2s = document.querySelectorAll('h2:nth-of-type(even)');
+
+  for (let h2 of h2s) {
+
+    h2.classList.add('greyed');
+    var elem = h2.nextElementSibling;
+
+    while (elem.nodeName == "P") {
+      elem.classList.add('greyed');
+      elem = elem.nextElementSibling;
+    };
+
+  }
+</script>
   
 </body>
 </html>

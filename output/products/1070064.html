@@ -65,7 +65,6 @@
         </div>
 
       <div class="content">
-
         <h2>Description</h2>
 <p>Removes soap scum and mineral deposits. Safe on fiberglass. Leaves all chrome, porcelain and tile bright and shiny. Formulated to effectively remove all bathroom soils including hardened formations of hard-water mineral deposits, rust stains, water spots and soap scum, all with no acid. Pleasant citrus fragrance.</p>
 <h2>DILUTION RATIO</h2>
@@ -77,7 +76,6 @@
 <p>Turn off water supply after use and disconnect.</p>
 <h2>Certifications</h2>
 <p>Certified for reduced environmental impact. View specific attributes evaluated: https://ul.com/el</p>
-
         <h2>Safety Information</h2>
   <p>Read the Safety Data Sheet (SDS) and product label before use. The
   SDS and product label contain hazard warnings, precautionary statements
@@ -199,16 +197,20 @@ window.onscroll = function () {
 </script>
   
   <script rel='text/javascript'>
-    const h2s = document.querySelectorAll('h2:nth-of-type(even)');
-    for (let h2 of h2s) {
-      h2.classList.add('greyed');
-      var elem = h2.nextElementSibling;  
-      while (elem.nodeName == "P") {
-        elem.classList.add('greyed');
-        elem = elem.nextElementSibling;
-      };
-    }
-  </script>
+  const h2s = document.querySelectorAll('h2:nth-of-type(even)');
+
+  for (let h2 of h2s) {
+
+    h2.classList.add('greyed');
+    var elem = h2.nextElementSibling;
+
+    while (elem.nodeName == "P") {
+      elem.classList.add('greyed');
+      elem = elem.nextElementSibling;
+    };
+
+  }
+</script>
   
 </body>
 </html>
