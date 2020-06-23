@@ -14,7 +14,7 @@ site.SOLSTA_CATEGORIES = {
         }
 
 class Product(Page):
-    list_attrs = ['certifications']
+    list_attrs = ['certifications', 'ppe']
 
 @site.register_collection
 class products(Collection):
