@@ -1,0 +1,11 @@
+{% if ppe %}
+<h2 class="subtitle">Protective Equipment</h2>
+<div class="columns">
+{% for tool in ppe %}
+<div class="column">
+  <h3 class="subtitle is-5">{{tool.title()}}</h3>
+  <svg src="/static/noun_face_shield.svg"></svg>
+</div>
+{% endfor %}
+</div>
+{% endif %}
