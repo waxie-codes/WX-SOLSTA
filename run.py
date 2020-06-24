@@ -15,7 +15,7 @@ site.SOLSTA_CATEGORIES = {
 
 site.tools = {
         'face shield': '/static/noun_face_shield.svg',
-        'apron': '/static/apron.svg',
+        'apron': '/static/noun_apron.svg',
         }
 
 class Product(Page):
