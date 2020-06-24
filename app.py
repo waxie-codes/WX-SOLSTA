@@ -24,7 +24,9 @@ site.tools = {
 
 site.CERTIFICATIONS = {
         'ul 2759': {
-            'description': 'PRODUCT CERTIFIED FOR REDUCED ENVIRONMENTAL IMPACT. VIEW SPECIFIC ATTRIBUTES EVALUATED UL.COM/EL\n\nUL 2759',
+            'description': '<p>PRODUCT CERTIFIED FOR REDUCED ENVIRONMENTAL \
+            IMPACT. \
+            VIEW SPECIFIC ATTRIBUTES EVALUATED UL.COM/EL</p><p>UL 2759</p>',
             'image': '/static/ecologo.jpg',
             },
         'cacc': {
