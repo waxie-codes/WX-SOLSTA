@@ -1,7 +1,6 @@
 from render_engine import Page, Collection, Blog
 from app import site
 
-
 class Product(Page):
     list_attrs = ['certifications', 'ppe']
 

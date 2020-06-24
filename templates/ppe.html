@@ -2,9 +2,15 @@
 <h2 class="subtitle">Protective Equipment</h2>
 <div class="level">
 {% for tool in ppe %}
+<<<<<<< HEAD
 <div class="level-item">
     <img style="max-width: 75px;" src="{{tools[tool.lower()]}}">
     <h3 class="subtitle is-5">{{tool.title()}}</h3>
+=======
+<div class="column">
+  <h3 class="subtitle is-5">{{tool.title()}}</h3>
+  <img style="max-width: 75px;" src="{{tool.lower()}}">
+>>>>>>> parent of 185421e... update ppe
 </div>
 {% endfor %}
 </div>

@@ -37,5 +37,8 @@ site.CERTIFICATIONS = {
             },
         'cri': {
             'description': 'CRI Seal of Approval'
-            }
+            },
+        'gs-37': {
+            'description': 'Green Seal Certified: GS-37',
+            },
         }
