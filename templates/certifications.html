@@ -3,8 +3,12 @@
     {% for certification in certifications %}
     {% set cert = CERTIFICATIONS[certification.lower()] %}
       <div class="column">
+        <div>
           <img style="max-height: 150px;" src="{{cert['image']}}">
+        </div>
+        <div>
           <small class="is-size-7">{{cert['description']}}</small>
+        </div>
       </div>
     {% endfor %}
   </div>
