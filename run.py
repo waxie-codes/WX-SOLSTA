@@ -13,7 +13,7 @@ site.SOLSTA_CATEGORIES = {
         '900': 'FoodService Cleaners/Sanitizer',
         }
 
-site.images = {
+site.tools = {
         'face shield': '/static/noun_face_shield.svg',
         'apron': '/static/apron.svg',
         }

@@ -4,7 +4,7 @@
 {% for tool in ppe %}
 <div class="column">
   <h3 class="subtitle is-5">{{tool.title()}}</h3>
-  <img style="max-width: 75px;" src="{{tool.lower()}}">
+  <img style="max-width: 75px;" src="{{tools[tool.lower()]}}">
 </div>
 {% endfor %}
 </div>
