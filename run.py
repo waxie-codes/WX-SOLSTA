@@ -17,7 +17,7 @@ site.tools = {
         'face shield': '/static/shutter_shield.png',
         'apron': '/static/shutter_apron.png',
         'gloves': '/static/shutter_gloves.png',
-        'glasses': '/static/shutter_glasses.png',
+        'safety glasses': '/static/shutter_glasses.png',
         }
 
 class Product(Page):
