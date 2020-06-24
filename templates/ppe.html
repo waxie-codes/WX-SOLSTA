@@ -1,8 +1,8 @@
 {% if ppe %}
 <h2 class="subtitle">Protective Equipment</h2>
-<div class="columns">
+<div class="level">
 {% for tool in ppe %}
-<div class="column">
+<div class="level-item">
   <h3 class="subtitle is-5">{{tool.title()}}</h3>
   <img style="max-width: 75px;" src="{{tools[tool.lower()]}}">
 </div>
