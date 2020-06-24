@@ -1,9 +1,16 @@
   <h2 class="subtitle">Certifications</h2>
   <div class="level">
     {% for certification in certifications %}
-    {% set cert = CERTIFICATIONS['certification'] %}
+    {% set cert = CERTIFICATIONS[certification.lower()] %}
       <div class="level-item">
-        <h3 class="subtitle is-5">{{cert}}</h3>
+        <div class="card">
+          <div class="card-image">
+            <img src="{{cert['image']}}">
+          </div>
+          <div class="card-body">
+            <h3 class="subtitle is-5">{{certification}}</h3>
+          </div>
+        </div>
       </div>
     {% endfor %}
   </div>

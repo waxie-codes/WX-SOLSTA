@@ -27,9 +27,15 @@ site.CERTIFICATIONS = {
             'description': 'PRODUCT CERTIFIED FOR REDUCED ENVIRONMENTAL IMPACT. VIEW SPECIFIC ATTRIBUTES EVALUATED UL.COM/EL\n\nUL 2759',
             'image': '/static/ecologo.jpg',
             },
-        'CACC': {
+        'cacc': {
             'description': 'This product has been granted a CACC certificate by the South Coast AQMD',
             'link': "http://www.aqmd.gov/home/programs/business/business-detail?title=cacc-cert&parent=certification-programs-training",
             'image': '/static/cacc.jpg',
             },
+        'epa': {
+            'description': 'Formulated in Parternship with EPA DfE'
+            },
+        'cri': {
+            'description': 'CRI Seal of Approval'
+            }
         }
