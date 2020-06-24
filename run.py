@@ -14,8 +14,10 @@ site.SOLSTA_CATEGORIES = {
         }
 
 site.tools = {
-        'face shield': '/static/noun_face_shield.png',
-        'apron': '/static/noun_apron.png',
+        'face shield': '/static/shutter_shield.png',
+        'apron': '/static/shutter_apron.png',
+        'gloves': '/static/shutter_gloves.png',
+        'glasses': '/static/shutter_glasses.png',
         }
 
 class Product(Page):
