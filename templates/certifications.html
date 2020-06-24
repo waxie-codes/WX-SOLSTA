@@ -5,10 +5,14 @@
       <div class="level-item">
         <div class="card">
           <div class="card-image">
-            <img src="{{cert['image']}}">
+            <img style="max-width: 25px;" src="{{cert['image']}}">
           </div>
           <class="card-body">
+          {% if description in cert %}
+            <small>{{cert['description']}}</small>
+          {% else %}
             <small>{{certification}}</small>
+          {% endif %}
           </div>
         </div>
       </div>
