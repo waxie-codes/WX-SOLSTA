@@ -2,7 +2,7 @@
   <div class="columns">
     {% for certification in certifications %}
     {% set cert = CERTIFICATIONS[certification.lower()] %}
-    <div class="column">
+    <div class="column is-3">
       <div class="box">
         <img style="max-height: 150px;" src="{{cert['image']}}">
         <div>
