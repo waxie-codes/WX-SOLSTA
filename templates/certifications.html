@@ -1,8 +1,9 @@
   <h2 class="subtitle">Certifications</h2>
   <div class="level">
     {% for certification in certifications %}
+    {% set cert = CERTIFICATIONS['certification'] %}
       <div class="level-item">
-        <h3 class="subtitle is-5">{{certification}}</h3>
+        <h3 class="subtitle is-5">{{cert}}</h3>
       </div>
     {% endfor %}
   </div>

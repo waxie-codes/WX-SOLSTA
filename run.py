@@ -1,24 +1,6 @@
-from render_engine import Site, Page, Collection, Blog
+from render_engine import Page, Collection, Blog
+from app import site
 
-site = Site(strict=True)
-site.SOLSTA_CATEGORIES = {
-        '100': 'Cleaners/Degreasers',
-        '200': 'All-Purpose Cleaners',
-        '300': 'Restroom Cleaners',
-        '400': 'Multi-Use Cleaners',
-        '500': 'Glass & Surface Cleaner',
-        '600': 'Air Fresheners',
-        '700': 'Hard Surface Disinfectant Cleaners',
-        '800': 'Carpet Cleaners',
-        '900': 'FoodService Cleaners/Sanitizer',
-        }
-
-site.tools = {
-        'face shield': '/static/shutter_shield.png',
-        'apron': '/static/shutter_apron.png',
-        'gloves': '/static/shutter_gloves.png',
-        'safety glasses': '/static/shutter_glasses.png',
-        }
 
 class Product(Page):
     list_attrs = ['certifications', 'ppe']
