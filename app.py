@@ -20,6 +20,7 @@ site.tools = {
         'apron': '/static/shutter_apron.png',
         'gloves': '/static/shutter_gloves.png',
         'safety glasses': '/static/shutter_glasses.png',
+        'wet floor sign': '/static/shutter_sign.png',
         }
 
 site.CERTIFICATIONS = {
