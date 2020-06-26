@@ -8,7 +8,7 @@ class Product(Page):
         super().__init__(*args, **kwargs)
 
         if hasattr(self, 'certifications'):
-            self.certifications = sorted(self.certifications)
+            self.certifications = sorted(self.certifications, key=lambda x:x)
 
 @site.register_collection
 class products(Collection):
