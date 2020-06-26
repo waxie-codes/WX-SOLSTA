@@ -4,6 +4,12 @@ from app import site
 class Product(Page):
     list_attrs = ['certifications', 'ppe']
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        if hasattr(self, 'certifications'):
+            self.certifications = sorted(self.certifications)
+
 @site.register_collection
 class products(Collection):
     page_content_type = Product
