@@ -9,6 +9,11 @@ class Product(Page):
 
         if hasattr(self, 'certifications'):
             self.certifications = sorted(self.certifications, key=lambda x:x)
+            print(self.certifications)
+
+        if hasattr(self, 'ppe'):
+            self.ppe = sorted(self.ppe, key=lambda x:x)
+            print(self.ppe)
 
 @site.register_collection
 class products(Collection):
