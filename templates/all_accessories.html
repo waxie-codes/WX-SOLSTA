@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
-<h1 class="title">Accessories</h1>
+{% block content %}
+  <h1 class="title">Accessories</h1>
 
-{% for page in pages %}
-{{ page.product_description }}
-{% endfor %}
+  {% for page in pages %}
+  {{ page }}
+  {{ page.waxie_item_number }}
+  {% endfor %}
+{% endblock %}
