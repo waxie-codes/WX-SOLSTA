@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1 class="title">SOLSTA Accessories</h1>
+<section class="section">
+  <div class="container">
+    <h1 class="title">SOLSTA Accessories</h1>
 
-  {% for product in pages %}
-      <h2 class="subtitle">
-        <a href="/{{product.slug}}">
-          <strong>{{product.waxie_item_number}}</strong> - {{product.product_description}}
-        </a>
-      </h2>
-  {% endfor %}
+    {% for product in pages %}
+        <h2 class="subtitle">
+          <a href="/{{product.slug}}">
+            <strong>{{product.waxie_item_number}}</strong> - {{product.product_description}}
+          </a>
+        </h2>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}
