@@ -13,8 +13,13 @@ class Product(Page):
         if hasattr(self, 'ppe'):
             self.ppe = sorted(self.ppe, key=lambda x:x)
 
-@site.register_collection
 class Products(Collection):
+    @staticmethod
+    def archive_default_sort(cls):
+        return (cls.product_description)
+
+@site.register_collection
+class Chemicals(Products):
     page_content_type = Product
     template = 'products.html'
     routes = ["", "products"]
@@ -24,12 +29,9 @@ class Products(Collection):
     archive_slug = 'all_products.html'
     archive_template = "all_products.html"
 
-    @staticmethod
-    def archive_default_sort(cls):
-        return (cls.product_description)
 
 @site.register_collection
-class Dispensers(Collection):
+class Dispensers(Products):
     routes = ["", "dispensers"] # routes will appear at '/page' and '/pages/page'
     content_path = "content/dispensers" # collections must have their paths assigned
     has_archive = True
@@ -39,7 +41,7 @@ class Dispensers(Collection):
 
 
 @site.register_collection
-class Accessories(Collection):
+class Accessories(Products):
     page_content_type = Product
     content_path = "content/accessories"
     routes = ["", "accessories"]
@@ -47,6 +49,7 @@ class Accessories(Collection):
     template = 'products.html'
     archive_slug = 'all_accessories'
     archive_template = "all_accessories.html"
+
 
 class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
