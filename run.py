@@ -42,7 +42,7 @@ class Dispensers(Collection):
 class Accessories(Collection):
     page_content_type = Product
     content_path = "content/accessories"
-    routes = ["accessories"]
+    routes = ["", "accessories"]
     has_archive = True
     template = 'products.html'
     archive_slug = 'all_accessories'
