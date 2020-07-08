@@ -9,11 +9,9 @@ class Product(Page):
 
         if hasattr(self, 'certifications'):
             self.certifications = sorted(self.certifications, key=lambda x:x)
-            print(self.certifications)
 
         if hasattr(self, 'ppe'):
             self.ppe = sorted(self.ppe, key=lambda x:x)
-            print(self.ppe)
 
 @site.register_collection
 class Products(Collection):
@@ -42,9 +40,11 @@ class Dispensers(Collection):
 
 @site.register_collection
 class Accessories(Collection):
+    page_content_type = Product
     content_path = "content/accessories"
     routes = ["accessories"]
     has_archive = True
+    template = 'products.html'
 
 class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
