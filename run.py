@@ -46,7 +46,7 @@ class Accessories(Collection):
     has_archive = True
     template = 'products.html'
     archive_slug = 'all_accessories'
-    archive_template = "all_products.html"
+    archive_template = "all_accessories.html"
 
 class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
