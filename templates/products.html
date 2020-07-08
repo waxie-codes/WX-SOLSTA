@@ -5,9 +5,11 @@
   {% block content %}
   <section class="section">
     <div class="container">
+      {% if image %}
       <div class="has-text-centered">
         <img style="height: 25em;" src="{{image}}">
       </div>
+      {% endif %}
       <div class="field is-grouped">
         <div class="control">
         <h2 class="subtitle is-5">
