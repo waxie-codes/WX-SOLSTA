@@ -6,9 +6,9 @@
   <section class="section">
     <div class="container">
       {% if image %}
-      <div class="has-text-centered">
-        <img style="height: 25em;" src="{{image}}">
-      </div>
+        <div class="has-text-centered">
+          <img style="height: 25em;" src="{{image}}">
+        </div>
       {% endif %}
       <div class="field is-grouped">
         <div class="control">
@@ -16,6 +16,7 @@
           {{waxie_item_number}}
         </h2>
         </div>
+        {% if category %}
         <div class="control">
             <span class="tag is-dark ">
               <a href="#" class="has-text-white">
@@ -23,6 +24,7 @@
               </a>
             </span>
         </div>
+        {% endif %}
       </div>
         <h1 class="title is-2">{{product_description}}</h1>
         <div class="field is-grouped">
