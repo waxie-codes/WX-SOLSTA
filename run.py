@@ -16,7 +16,7 @@ class Product(Page):
 class Products(Collection):
     @staticmethod
     def archive_default_sort(cls):
-        return (cls.waxie_item_number)
+        return (cls.product_description)
 
 @site.register_collection
 class Chemicals(Products):

@@ -2,7 +2,7 @@ from render_engine import Site
 from dataclasses import dataclass
 
 
-site = Site(strict=True)
+site = Site()
 site.SOLSTA_CATEGORIES = {
         '100': 'Cleaners/Degreasers',
         '200': 'All-Purpose Cleaners',
