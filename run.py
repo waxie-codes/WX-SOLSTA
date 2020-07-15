@@ -1,3 +1,4 @@
+import inspect
 from render_engine import Page, Collection, Blog
 from app import site
 
@@ -51,15 +52,13 @@ class Accessories(Products):
     archive_template = "all_accessories.html"
 
 
+@site.register_route
 class Index(Page):
     template = "index.html" # page.html is the default template but you can make a custom template
     slug = "index"
     content_path = 'content/pages/index.md'
+    dispensers = site.collections['Dispensers'].pages
+    hide_header = True
 
-    def __init__(self):
-        super().__init__()
-        self.dispensers = site.collections['Dispensers'].pages
-        self.hide_header = True
 
-site.route(Index())
 site.render()
