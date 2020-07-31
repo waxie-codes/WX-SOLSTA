@@ -1,3 +1,5 @@
+title: WAXIE SOLSTA
+
 ## BENEFITS OF WAXIE SOLUTION STATION
 
 * Flexible to meet your needs

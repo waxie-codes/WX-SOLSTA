@@ -21,7 +21,7 @@ class Products(Collection):
 
 @site.register_collection
 class Chemicals(Products):
-    page_content_type = Product
+    content_type = Product
     template = 'products.html'
     routes = ["", "products"]
     subcollections = ['category']
@@ -43,7 +43,7 @@ class Dispensers(Products):
 
 @site.register_collection
 class Accessories(Products):
-    page_content_type = Product
+    content_type = Product
     content_path = "content/accessories"
     routes = ["", "accessories"]
     has_archive = True
