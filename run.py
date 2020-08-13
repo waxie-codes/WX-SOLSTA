@@ -46,7 +46,7 @@ class Accessories(Products):
     content_path = "content/accessories"
     routes = ["", "accessories"]
     has_archive = True
-    template = 'products.html'
+    template = 'accessories.html'
     archive_slug = 'all_accessories'
     archive_template = "all_accessories.html"
 
