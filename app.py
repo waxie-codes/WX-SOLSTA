@@ -45,3 +45,4 @@ site.CERTIFICATIONS = {
             'description': 'Green Seal Certified: GS-37',
             },
         }
+site.strict = True
