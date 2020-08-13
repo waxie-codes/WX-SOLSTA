@@ -30,7 +30,6 @@ class Chemicals(Products):
     archive_slug = 'all_products.html'
     archive_template = "all_products.html"
 
-
 @site.register_collection
 class Dispensers(Products):
     routes = ["", "dispensers"] # routes will appear at '/page' and '/pages/page'
