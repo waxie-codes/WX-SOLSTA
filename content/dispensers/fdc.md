@@ -1,4 +1,4 @@
-product_description: WAXIE SOLSTA FDC™ | Flexible Dilution Control
+product_description: WAXIE SOLSTA Flexible Dilution Control
 waxie_item_number: 321070
 slug: fdc
 image: https://shop.waxie.com/Attachments/attachments/images/medium/321070.jpg
