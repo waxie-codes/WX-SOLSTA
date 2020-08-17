@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+  {% block stylesheets %}
+  <link rel="stylesheet" href="/static/products.css">
+  {% endblock %}
+  {% block content %}
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+      {% if image %}
+      <figure class="image is-1by1">
+          <img src="{{image}}">
+      </figure>
+      {% endif %}
+        </div>
+        <div class="column is-expanded">
+        <div class="field is-grouped">
+        <div class="control">
+        <h2 class="subtitle is-5">
+          {{waxie_item_number}}
+        </h2>
+        </div>
+        {% if category %}
+        <div class="control">
+            <span class="tag is-dark ">
+              <a href="#" class="has-text-white">
+                {{category}}-{{SOLSTA_CATEGORIES[category]}}
+              </a>
+            </span>
+        </div>
+        {% endif %}
+      </div>
+        <h1 class="title is-2">{{product_description}}</h1>
+        <div class="field is-grouped">
+          {% if waxie_green %}
+          <div class="control">
+            <div class="tags are-small has-addons">
+              <span class="tag is-success"></span>
+              <span class="tag is-dark">WAXIE-Green</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if versa_compatible %}
+          <div class="control">
+            <div class="tags are-small has-addons">
+              <span class="tag is-warning"></span>
+              <span class="tag is-dark">WAXIE Versa Compatible</span>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+
+      <div class="content">
+        {% include 'ppe.html' %}
+        {{content}}
+        {% include 'safety.html' %}
+        {% include 'certifications.html' %}
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  {% endblock %}
+  {% block scripts %}
+  {% include 'striped_content.js' %}
+  {% endblock %}
