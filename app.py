@@ -1,8 +1,10 @@
+from pathlib import Path
 from render_engine import Site
 from dataclasses import dataclass
 
 
 site = Site()
+site.output_path = Path('docs')
 site.SOLSTA_CATEGORIES = {
         '100': 'Cleaners/Degreasers',
         '200': 'All-Purpose Cleaners',
