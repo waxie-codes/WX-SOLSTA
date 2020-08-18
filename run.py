@@ -23,7 +23,7 @@ class Products(Collection):
 class Chemicals(Products):
     content_type = Product
     template = 'products.html'
-    routes = ["", "products"]
+    routes = [""]
     subcollections = ['category']
     content_path = "content"
     has_archive = True
@@ -32,7 +32,7 @@ class Chemicals(Products):
 
 @site.register_collection
 class Dispensers(Products):
-    routes = ["", "dispensers"] # routes will appear at '/page' and '/pages/page'
+    routes = [""] # routes will appear at '/page' and '/pages/page'
     content_path = "content/dispensers" # collections must have their paths assigned
     has_archive = True
     archive_template = "all_dispensers.html"
@@ -44,7 +44,7 @@ class Dispensers(Products):
 class Accessories(Products):
     content_type = Product
     content_path = "content/accessories"
-    routes = ["", "accessories"]
+    routes = [""]
     has_archive = True
     template = 'accessories.html'
     archive_slug = 'all_accessories'
