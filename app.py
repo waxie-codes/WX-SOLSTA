@@ -19,11 +19,11 @@ site.SOLSTA_CATEGORIES = {
         }
 
 site.tools = {
-        'face shield': '/static/shutter_shield.png',
-        'apron': '/static/shutter_apron.png',
-        'gloves': '/static/shutter_gloves.png',
-        'safety glasses': '/static/shutter_glasses.png',
-        'wet floor sign': '/static/shutter_sign.png',
+        'face shield': './static/shutter_shield.png',
+        'apron': './static/shutter_apron.png',
+        'gloves': './static/shutter_gloves.png',
+        'safety glasses': './static/shutter_glasses.png',
+        'wet floor sign': './static/shutter_sign.png',
         }
 
 site.CERTIFICATIONS = {
@@ -31,12 +31,12 @@ site.CERTIFICATIONS = {
             'description': '<p>PRODUCT CERTIFIED FOR REDUCED ENVIRONMENTAL \
             IMPACT. \
             VIEW SPECIFIC ATTRIBUTES EVALUATED UL.COM/EL</p><p>UL 2759</p>',
-            'image': '/static/ecologo.jpg',
+            'image': './static/ecologo.jpg',
             },
         'cacc': {
             'description': 'This product has been granted a CACC certificate by the South Coast AQMD',
             'link': "http://www.aqmd.gov/home/programs/business/business-detail?title=cacc-cert&parent=certification-programs-training",
-            'image': '/static/cacc.jpg',
+            'image': './static/cacc.jpg',
             },
         'epa': {
             'description': 'Formulated in Parternship with EPA DfE'
