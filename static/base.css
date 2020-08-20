@@ -7482,7 +7482,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .navbar-burger span {
   width: 36px;
-  margin-right: 2em; }
+  margin-right: auto; }
 
 .navbar-burger span:nth-child(1) {
   top: calc(50% - 8px); }
