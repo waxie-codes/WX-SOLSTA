@@ -9,6 +9,10 @@ $navbar-height: 7rem;
 
 @import "../node_modules/bulma/bulma.sass";
 
+.navbar-burger {
+  margin-top: 1em;
+  }
+
 .navbar-burger span {
     width: 24px;
   }
