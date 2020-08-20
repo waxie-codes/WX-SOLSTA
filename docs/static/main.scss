@@ -5,13 +5,12 @@ $blue: #0066be; // WAXIE BLUE
 $info: $blue;
 $navbar-item-hover-background-color: $blue;
 
-$navbar-height: 5rem;
+$navbar-height: 7rem;
 
 @import "../node_modules/bulma/bulma.sass";
 
 .navbar-burger span {
     width: 24px;
-    padding-right: 2em;
   }
 
 .navbar-burger span:nth-child(1) {
