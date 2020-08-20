@@ -7481,8 +7481,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem; }
 
 .navbar-burger span {
-  width: 36px;
-  margin-right: auto; }
+  width: 24px;
+  padding-right: 2em; }
 
 .navbar-burger span:nth-child(1) {
   top: calc(50% - 8px); }
