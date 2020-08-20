@@ -7480,6 +7480,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.navbar-burger span {
+  width: 36px; }
+
 .navbar-burger span:nth-child(1) {
   top: calc(50% - 8px); }
 
