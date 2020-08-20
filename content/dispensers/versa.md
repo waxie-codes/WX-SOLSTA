@@ -1,4 +1,4 @@
-product_description: WAXIE VERSA HIGH PERFORMANCE CLEANING CADDY
+product_description: WAXIE VERSA High Performance Cleaning Caddy
 waxie_item_number: 577535
 slug: versa
 image: https://shop.waxie.com/Attachments/attachments/images/medium/577535.jpg
