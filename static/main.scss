@@ -8,3 +8,10 @@ $navbar-item-hover-background-color: $blue;
 $navbar-height: 5rem;
 
 @import "../node_modules/bulma/bulma.sass";
+
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 8px); }
+.navbar-burger span:nth-child(2) {
+  top: calc(50% - 1px); }
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 8px); }
