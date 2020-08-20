@@ -10,7 +10,8 @@ $navbar-height: 5rem;
 @import "../node_modules/bulma/bulma.sass";
 
 .navbar-burger span {
-    width: 36px; }
+    width: 36px;
+    margin-right: 2em;}
 
 .navbar-burger span:nth-child(1) {
   top: calc(50% - 8px); }
@@ -18,3 +19,9 @@ $navbar-height: 5rem;
   top: calc(50% - 1px); }
 .navbar-burger span:nth-child(3) {
   top: calc(50% + 6px); }
+
+@media screen and (max-width: 1023px) {
+  body {
+    font-size: 1.5rem;
+    }
+}
