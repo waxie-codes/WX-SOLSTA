@@ -8,8 +8,9 @@ It uses GitHub Actions to run [Render Engine]
 
 ## How to Edit Items
 
-- In Code Select the Content Folder and Look for the _Corresponding Item Number_.
-- Select the Pencil Icon to edit the text.
+- In Code Select the Content Folder and Look for the _Corresponding Item Number_
+- Select the Pencil Icon to edit the text
+- When changes are complete add a Commit Message at the bottom and Commit to `master`
 
 [Render Engine] uses a split system of metadata and [markdown](https://daringfireball.net/projects/markdown/).
 
