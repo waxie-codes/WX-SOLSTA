@@ -7496,5 +7496,5 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   top: calc(50% + 6px); }
 
 @media screen and (max-width: 1023px) {
-  body {
+  body, p, div {
     font-size: 1.25rem; } }
